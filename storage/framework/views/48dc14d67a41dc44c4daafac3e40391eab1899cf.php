@@ -70,7 +70,7 @@
         <div class="auth-wrapper v2">
             <div class="auth-form">
                 <div class="logo">
-                    <a class="navbar-brand landing-logo" href="<?php echo e(route('home')); ?>"> <img src="<?php echo e(asset(Storage::url('upload/logo/')) . '/logo5.png'); ?>" alt="image"
+                    <a class="navbar-brand landing-logo" href="<?php echo e(route('home')); ?>"> <img src="<?php echo e(asset(Storage::url('upload/logo/')) . '/2_logo.png'); ?>" alt="image"
                         class="img-fluid brand-logo" /></a>
                 </div>
                 <?php echo $__env->yieldContent('content'); ?>

@@ -31,15 +31,15 @@
                         href="#" role="button" aria-haspopup="false" aria-expanded="false" >
                         <i class="ti ti-language"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown"> --}}
                         @foreach($languages as $language)
                             @if($language!='en')
-                                <a href="{{route('language.change',$language)}}" class="dropdown-item {{ $userLang==$language?'active':'' }}">
+                                {{-- <a href="{{route('language.change',$language)}}" class="dropdown-item {{ $userLang==$language?'active':'' }}">
                                     <span class="align-middle">{{ucfirst( $language)}}</span>
-                                </a>
+                                </a> --}}
                             @endif
                         @endforeach
-
+{{-- 
 
                     </div>
                 </li> --}}
