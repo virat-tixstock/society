@@ -26,7 +26,7 @@
         <div class="ms-auto">
             <ul class="list-unstyled">
 
-                <li class="dropdown pc-h-item" data-bs-toggle="tooltip" data-bs-original-title="{{__('Language')}}" data-bs-placement="bottom">
+                {{-- <li class="dropdown pc-h-item" data-bs-toggle="tooltip" data-bs-original-title="{{__('Language')}}" data-bs-placement="bottom">
                     <a class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
                         href="#" role="button" aria-haspopup="false" aria-expanded="false" >
                         <i class="ti ti-language"></i>
@@ -42,8 +42,8 @@
 
 
                     </div>
-                </li>
-                @if (\Auth::user()->type == 'super admin' || \Auth::user()->type == 'owner')
+                </li> --}}
+                @if (\Auth::user()->type == 'super admin' || \Auth::user()->type == 'owner' || \Auth::user()->type == 'manager')
                     <li class="dropdown pc-h-item pc-mega-menu" data-bs-toggle="tooltip" data-bs-original-title="{{__('Theme Settings')}}" data-bs-placement="bottom">
                         <a href="#" class="pc-head-link head-link-secondary dropdown-toggle arrow-none me-0"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvas_pc_layout">

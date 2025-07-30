@@ -26,24 +26,8 @@
         <div class="ms-auto">
             <ul class="list-unstyled">
 
-                <li class="dropdown pc-h-item" data-bs-toggle="tooltip" data-bs-original-title="<?php echo e(__('Language')); ?>" data-bs-placement="bottom">
-                    <a class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
-                        href="#" role="button" aria-haspopup="false" aria-expanded="false" >
-                        <i class="ti ti-language"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-                        <?php $__currentLoopData = $languages; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $language): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <?php if($language!='en'): ?>
-                                <a href="<?php echo e(route('language.change',$language)); ?>" class="dropdown-item <?php echo e($userLang==$language?'active':''); ?>">
-                                    <span class="align-middle"><?php echo e(ucfirst( $language)); ?></span>
-                                </a>
-                            <?php endif; ?>
-                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
-
-                    </div>
-                </li>
-                <?php if(\Auth::user()->type == 'super admin' || \Auth::user()->type == 'owner'): ?>
+                
+                <?php if(\Auth::user()->type == 'super admin' || \Auth::user()->type == 'owner' || \Auth::user()->type == 'manager'): ?>
                     <li class="dropdown pc-h-item pc-mega-menu" data-bs-toggle="tooltip" data-bs-original-title="<?php echo e(__('Theme Settings')); ?>" data-bs-placement="bottom">
                         <a href="#" class="pc-head-link head-link-secondary dropdown-toggle arrow-none me-0"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvas_pc_layout">
