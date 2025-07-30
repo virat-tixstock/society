@@ -224,44 +224,46 @@
                 </div>
                @endif
                 <div class="card">
-                    <div class="col-12">
-                        <style>
-                            .signature-container {
-                            display: flex;
-                            justify-content: space-between;
-                            margin-top: 100px;
-                            padding: 0 50px;
-                            }
+                  
+                        <div class="col-12">
+                            <style>
+                                .signature-container {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 10px;
+                                padding: 0 15px;
+                                }
 
-                            .signature-box {
-                            width: 20%;
-                            text-align: center;
-                            }
+                                .signature-box {
+                                width: 20%;
+                                text-align: center;
+                                }
 
-                            .line {
-                            border-bottom: 1px solid #000;
-                            margin-bottom: 5px;
-                            height: 30px;
-                            }
+                                .line {
+                                border-bottom: 1px solid #000;
+                                margin-bottom: 5px;
+                                height: 30px;
+                                }
 
-                            .label {
-                            font-weight: bold;
-                            }
-                            .important {
+                                .label {
                                 font-weight: bold;
-                                color: #d6336c;
-                            }   
-                        </style>
-                        <div class="signature-container">
-                            <div class="signature-box">
-                                <div class="line"></div>
-                                <div class="label important">હોલ ભાડે આપનારની સહી</div>
+                                }
+                                .important {
+                                    font-weight: bold;
+                                    color: #d6336c;
+                                }   
+                            </style>
+                            <div class="signature-container">
+                                <div class="signature-box">
+                                    <div class="line"></div>
+                                    <div class="label important">હોલ ભાડે આપનારની સહી</div>
+                                </div>
+                                <div class="signature-box">
+                                    <div class="line"></div>
+                                    <div class="label important">હોલ ભાડે રાખનારની સહી</div>
+                                </div>
                             </div>
-                            <div class="signature-box">
-                                <div class="line"></div>
-                                <div class="label important">હોલ ભાડે રાખનારની સહી</div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
