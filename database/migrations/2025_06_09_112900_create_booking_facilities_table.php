@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('booking_id')->default(0);
             $table->integer('building_id')->default(0);
             $table->integer('member_id')->default(0);
+            $table->string('member_name')->nullable();
+            $table->text('address')->nullable();
             $table->string('status')->nullable();
             $table->integer('parent_id')->default(0);
             $table->timestamps();
