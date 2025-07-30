@@ -41,7 +41,6 @@ use App\Http\Controllers\UnitController;
 use App\Http\Controllers\UtilityBillController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\VisitorTypeController;
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,16 +62,16 @@ require __DIR__ . '/auth.php';
 //     ]
 // );
 
-Route::get('home', [AuthenticatedSessionController::class, 'create'])->name('home')->middleware(
+Route::get('home', [HomeController::class, 'index'])->name('home')->middleware(
     [
-
+        'auth',
         'XSS',
     ]
 );
 
 Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard')->middleware(
     [
-
+        'auth',
         'XSS',
     ]
 );

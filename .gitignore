@@ -1,3 +1,53 @@
 /vendor/srmklive
 /.idea
 /.vscode
+# Laravel core
+/vendor
+/node_modules
+
+# Laravel environment
+.env
+.env.*    # e.g., .env.testing, .env.staging
+
+# Laravel compiled files & cache
+/bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Laravel storage (except versioned folders)
+storage/*
+!storage/app/
+!storage/app/public/
+!storage/framework/
+!storage/framework/cache/
+!storage/framework/sessions/
+!storage/framework/testing/
+!storage/framework/views/
+!storage/logs/
+!storage/logs/.gitignore
+
+# Laravel test coverage (optional)
+coverage/
+
+# Composer & NPM logs
+composer.lock
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# IDE/editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# PHPStorm/JetBrains
+/.phpstorm.meta.php/
+
+# Laravel Telescope & Debugbar (if used)
+*.log
+debugbar/*
+telescope/*
